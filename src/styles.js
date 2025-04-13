@@ -13,12 +13,13 @@ export const Form = styled.View`
   border-bottom-width: 1px;
   border-color: #eee;
 `;
+
 export const Input = styled.TextInput.attrs({
-  placeholderTextColor: "#999",
+  placeholderTextColor: "#666",
 })`
   flex: 1;
   height: 40px;
-  background: #eee;
+  background: #fff;
   border-radius: 4px;
   padding: 0 15px;
   border: 1px solid #ccc;
@@ -27,7 +28,7 @@ export const Input = styled.TextInput.attrs({
 export const SubmitButton = styled(RectButton)`
   justify-content: center;
   align-items: center;
-  background: #fa4444;
+  background: #FFCC00;
   border-radius: 4px;
   margin-left: 10px;
   padding: 0 12px;
@@ -42,18 +43,25 @@ export const List = styled.FlatList.attrs({
 export const User = styled.View`
   align-items: center;
   margin: 0 20px 30px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+  border-color: #FFCC00;
+  elevation: 4;
 `;
 
 export const Avatar = styled.Image`
   width: 64px;
   height: 64px;
-  border-radius: 32px;
-  background: #eee;
+  border-radius: 30px;
+  background: #F2F2F2;
 `;
 
 export const Name = styled.Text`
   font-size: 14px;
-  color: #333;
+  color: #000;
   font-weight: bold;
   margin-top: 4px;
   text-align: center;
@@ -64,7 +72,7 @@ export const Bio = styled.Text.attrs({
 })`
   font-size: 13px;
   line-height: 18px;
-  color: #999;
+  color: #666;
   margin-top: 5px;
   text-align: center;
 `;
@@ -73,7 +81,7 @@ export const ProfileButton = styled(RectButton)`
   margin-top: 10px;
   align-self: stretch;
   border-radius: 4px;
-  background: #7159c1;
+  background:#24b15f;
   justify-content: center;
   align-items: center;
   height: 36px;
@@ -86,7 +94,7 @@ export const ProfileButtonText = styled.Text`
   text-transform: uppercase;
 `;
 
-//Estilos para a página User
+//Estilos para a página PokemonDetails
 export const Header = styled.View`
   padding-top: 30px;
   align-items: center;
@@ -96,13 +104,12 @@ export const Header = styled.View`
 export const Avatarperfil = styled.Image`
   width: 100px;
   height: 100px;
-  border-radius: 50px;
-  background: #eee;
+  background: #F2F2F2;
 `;
 
 export const Nameperfil = styled.Text`
   font-size: 16px;
-  color: #333;
+  color: #000;
   font-weight: bold;
   margin-top: 10px;
   text-align: center;
@@ -111,7 +118,7 @@ export const Nameperfil = styled.Text`
 export const BioPerfil = styled.Text`
   font-size: 15px;
   line-height: 20px;
-  color: #999;
+  color: #666;
   margin-top: 5px;
   text-align: center;
 `;
@@ -135,7 +142,7 @@ export const OwnerAvatar = styled.Image`
   width: 42px;
   height: 42px;
   border-radius: 21px;
-  background: #eee;
+  background: #f5f5f5;
 `;
 
 export const Info = styled.View`
@@ -148,11 +155,21 @@ export const Title = styled.Text.attrs({
 })`
   font-size: 15px;
   font-weight: bold;
-  color: #333;
+  color: #000;
 `;
 
 export const Author = styled.Text`
   font-size: 13px;
-  color: #666;
+  color: #000;
   margin-top: 2px;
+`;
+
+export const CardPokemon = styled.View`
+  background: #F2F2F2;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #333;
+  border-radius: 16px;
+  padding: 20px;
+  margin: 15px 0;
 `;
