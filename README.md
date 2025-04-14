@@ -11,7 +11,7 @@
 Projeto criado com **React Native** utilizando **Expo** para consultar informações de APIs gratuitas.
 Selecionamos PokéAPI uma API pública que fornece dados sobre o universo Pokémon, incluindo informações sobre pokémons, tipos, habilidades, movimentos, evoluções e imagens. 
 ```bash
-[PokéAPI] (https://pokeapi.co/api/v2/) - Detalhes da Documentação
+https://pokeapi.co/api/v2/
 ```
 Deixaremos as instruções abaixo para a implementação e executação, assim poderá explorar conceitos de desenvolvimento mobile com essa API divertida e prática!
 
