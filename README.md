@@ -1,60 +1,74 @@
-# PokeApi_ReactNative
+## ✒️ Autores:
 
-npm i
+* **[Dimerson Vicente Ferreira](https://www.linkedin.com/in/dimerson-ferreira/)** 
+* **[Frederico Pessoa Barbosa](https://www.linkedin.com/in/frederico-pessoa-barbosa-a2720618b/)**
 
-<<<<<<< HEAD
-# Welcome to your Expo app 👋
+* *Trabalho de Programacao para Dispositivos Moveis I-A890-N-D.S.M.-109-20251 do 4o.Semestre FATEC FRANCA*
+* Se Gostar nos convide para uma Breja 🍺 ;D ;
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+# ⚡ PokeApi_ReactNative
 
-## Get started
+Projeto criado com **React Native** utilizando **Expo** para consultar informações de APIs gratuitas.
+Selecionamos PokéAPI uma API pública que fornece dados sobre o universo Pokémon, incluindo informações sobre pokémons, tipos, habilidades, movimentos, evoluções e imagens. 
+Deixaremos as instruções abaixo para a implementação e executação, assim poderá explorar conceitos de desenvolvimento mobile com essa API divertida e prática!
 
-1. Install dependencies
+## 🚀 Começando
+### 📦 Instalação
 
-   ```bash
-   npm install
-   ```
+1. Clone o repositório:
+```bash
+git clone https://github.com/Fredericobarbosa/PokeApi_ReactNative.git
+```
 
-2. Start the app
+2. Acesse a pasta do projeto:
+```bash
+cd PokeApi_ReactNative
+```
 
-   ```bash
-    npx expo start
-   ```
+3. Instale as dependências:
+```bash
+npm install
+```
 
-In the output, you'll find options to open the app in a
+4. Inicie o projeto:
+```bash
+npx expo start
+```
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Você verá no terminal opções para abrir o aplicativo em:
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- 📱 [Emulador Android](https://docs.expo.dev/workflow/android-studio-emulator/)
+- 🍏 [Simulador iOS](https://docs.expo.dev/workflow/ios-simulator/)
+- 🌐 Navegador com [Expo Go](https://expo.dev/go)
+- 🧪 [Build de desenvolvimento](https://docs.expo.dev/develop/development-builds/introduction/)
 
-## Get a fresh project
+---
 
-When you're ready, run:
+## 🛠️ Estrutura do Projeto
+
+Este projeto utiliza **roteamento baseado em arquivos**, facilitando a organização dos componentes dentro da pasta `app`.
+Você pode começar a desenvolver diretamente editando os arquivos da pasta:
+
+```
+/app
+```
+## ♻️ Reiniciar o Projeto
+
+Se desejar começar com um projeto limpo, execute:
 
 ```bash
 npm run reset-project
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Este comando moverá o código de exemplo para a pasta `app-example` e criará uma pasta `app` em branco para que você possa iniciar do zero.
 
-## Learn more
+## 📚 Saiba mais - Links utilizados para referência.
 
-To learn more about developing your project with Expo, look at the following resources:
+Aprofunde-se no desenvolvimento com Expo e React Native utilizando os links abaixo:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+- 📘 [Documentação oficial do Expo](https://docs.expo.dev/)
+- 🧭 [Guias e tutoriais](https://docs.expo.dev/guides)
+- 🎓 [Tutorial passo a passo](https://docs.expo.dev/tutorial/introduction/)
 
-## Join the community
 
-Join our community of developers creating universal apps.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
-
-Testando alterações no fork
-=======
-
->>>>>>> fa45a34ef39e385f968cfcf782c036f575a44f09
