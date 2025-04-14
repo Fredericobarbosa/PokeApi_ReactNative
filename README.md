@@ -96,7 +96,7 @@ Ao clicar no Botão Cadastrar, voltará para a tela de Login, onde poderá inset
 ### Resultado Detalhado (Cards)
    Ao clicar no Botão Ver detalhes, será disponibilizado na tela, mais informações sobre o Pokémon pesquisado. Segue exemplo na imagem:
 ---
-<img src="https://github.com/DimersonBR/PokeApi_ReactNative/blob/main/app/images/app_Resultado_detalhado.jpg" alt="Tela Login"  width="35%">
+<img src="https://github.com/DimersonBR/PokeApi_ReactNative/blob/main/app/images/app_resultado_detalhado.jpg" alt="Tela Login"  width="35%">
 
 Essas são as principais caracteristicas da API PokéAPI, consumindo e exibindo as informações solicitas nos cards. Seguindo projeto apresentado em sala de aula.
 
