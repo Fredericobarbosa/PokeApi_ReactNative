@@ -7,7 +7,6 @@ import {
   View,
   TextInput,
   TouchableOpacity,
-  Alert,
 } from "react-native";
 
 const Login = () => {
