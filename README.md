@@ -46,8 +46,6 @@ npx expo start
    (Permitir app tire fotos e grave videos )
 <img src="https://github.com/DimersonBR/PokeApi_ReactNative/blob/main/app/images/Leitura_do_codigo.png" alt="Scan QRCod"  width="65%">
 
-<img src="https://github.com/DimersonBR/PokeApi_ReactNative/blob/main/app/images/Leitura_do_codigo.png" alt="Scan QRCod"  width="95%">
-
 ## Imagens da aplicação:
 ### Tela inicial: - Login
    Após scaner o QRCod - basta acessar o app ira aparecer a tela de Login:
