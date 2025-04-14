@@ -10,6 +10,9 @@
 
 Projeto criado com **React Native** utilizando **Expo** para consultar informações de APIs gratuitas.
 Selecionamos PokéAPI uma API pública que fornece dados sobre o universo Pokémon, incluindo informações sobre pokémons, tipos, habilidades, movimentos, evoluções e imagens. 
+```bash
+[PokéAPI] (https://pokeapi.co/api/v2/) - Detalhes da Documentação
+```
 Deixaremos as instruções abaixo para a implementação e executação, assim poderá explorar conceitos de desenvolvimento mobile com essa API divertida e prática!
 
 ## 🚀 Começando
@@ -34,6 +37,18 @@ npm install
 ```bash
 npx expo start
 ```
+5. No dispositivo movel, baixe o app Expo GO na Play Store.
+- Observe a imagem:
+![Expo GO](./images/Expogo_playstore.jpg)
+
+
+- Abra o aplicativo e vá na opção Scan QR Code
+   (Permitir app tire fotos e grave videos )
+
+-
+
+
+
 
 Você verá no terminal opções para abrir o aplicativo em:
 
