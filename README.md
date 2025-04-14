@@ -39,13 +39,16 @@ npx expo start
 ```
 5. No dispositivo movel, baixe o app Expo GO na Play Store.
 - Observe a imagem:
-![Expo GO](./images/Expogo_playstore.jpg)
-
+### Instalar Expo go:
+![Expo GO](<img src="https://github.com/DimersonBR/PokeApi_ReactNative/blob/main/app/images/Expogo_playstore.jpg" alt="Play Store"  width="95%">)
 
 - Abra o aplicativo e vá na opção Scan QR Code
    (Permitir app tire fotos e grave videos )
+![Expo GO](<img src="https://github.com/DimersonBR/PokeApi_ReactNative/blob/main/app/images/Leitura%20do%20codigo.png" alt="Scan QRCod"  width="95%">)
 
--
+
+## Imagens da aplicação:
+### Tela inicial:
 
 
 
