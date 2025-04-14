@@ -1,18 +1,18 @@
 import React, { Component } from "react";
-import { ActivityIndicator, FlatList } from "react-native";
+import { ActivityIndicator, FlatList, ScrollView } from "react-native"; 
 import api from "../services/api";
 import {
   Container,
   Header,
   Avatarperfil,
-  Nameperfil,
+  Nameperfil,       
   BioPerfil,
-  Stars,
   Starred,
   OwnerAvatar,
   Info,
   Title,
   Author,
+  CardPokemon,
 } from "../styles";
 
 export default class PokemonDetail extends Component {
@@ -28,7 +28,6 @@ export default class PokemonDetail extends Component {
       const { route } = this.props;
       const { pokemon } = route.params;
 
-      // 🔹 Buscar detalhes do Pokémon
       const [pokemonResponse, speciesResponse] = await Promise.all([
         api.get(`/pokemon/${pokemon.name}`),
         api.get(`/pokemon-species/${pokemon.name}`)
@@ -38,18 +37,15 @@ export default class PokemonDetail extends Component {
       const evolutionUrl = speciesResponse.data.evolution_chain.url;
       const evolutionId = evolutionUrl.split("/").slice(-2, -1)[0];
 
-      // 🔹 Buscar a cadeia de evolução
       const evolutionResponse = await api.get(`/evolution-chain/${evolutionId}`);
       const evolutionChain = this.getEvolutionChain(evolutionResponse.data.chain);
 
-      // 🔹 Pegando os 5 primeiros movimentos do Pokémon
       const moves = pokemonData.moves
-        .slice(0, 5) // Pegando apenas os 5 primeiros
-        .map((m) => m.move.name.replace("-", " ")) // Removendo os traços dos nomes
+        .slice(0, 5)
+        .map((m) => m.move.name.replace("-", " "));
 
-      // 🔹 Pegando os status base do Pokémon
       const stats = pokemonData.stats.map((s) => ({
-        name: s.stat.name.replace("-", " "), // Melhorando o nome
+        name: s.stat.name.replace("-", " "),
         value: s.base_stat
       }));
 
@@ -72,7 +68,6 @@ export default class PokemonDetail extends Component {
     }
   }
 
-  // 🔹 Função para extrair a cadeia de evolução
   getEvolutionChain(chain) {
     let evolutions = [];
     while (chain) {
@@ -107,55 +102,63 @@ export default class PokemonDetail extends Component {
 
     return (
       <Container>
-        <Header>
-          <Avatarperfil source={{ uri: pokemon.sprite }} />
-          <Nameperfil>{pokemon.name.toUpperCase()}</Nameperfil>
-          <BioPerfil>Tipos: {pokemon.types}</BioPerfil>
-          <BioPerfil>Habilidades: {pokemon.abilities}</BioPerfil>
-        </Header>
+        <ScrollView showsVerticalScrollIndicator={false}>
+          <Header>
+            <Avatarperfil source={{ uri: pokemon.sprite }} />
+            <Nameperfil>{pokemon.name.toUpperCase()}</Nameperfil>
+            <BioPerfil>Tipos: {pokemon.types}</BioPerfil>
+            <BioPerfil>Habilidades: {pokemon.abilities}</BioPerfil>
+          </Header>
 
-        <Title style={{ textAlign: "center", marginTop: 20 }}>Status Base</Title>
-        <FlatList
-          data={pokemon.stats}
-          keyExtractor={(item) => item.name}
-          renderItem={({ item }) => (
-            <Starred>
-              <Info>
-                <Title>{item.name.toUpperCase()}</Title>
-                <Author>{item.value}</Author>
-              </Info>
-            </Starred>
-          )}
-        />
+          <CardPokemon>
+            <Title style={{ textAlign: "center", marginBottom: 10 }}>Status Base</Title>
+            <FlatList
+              horizontal
+              showsHorizontalScrollIndicator={false}
+              data={pokemon.stats}
+              keyExtractor={(item) => item.name}
+              renderItem={({ item }) => (
+                <Starred style={{ marginRight: 10 }}>
+                  <Info>
+                    <Title>{item.name.toUpperCase()}</Title>
+                    <Author>{item.value}</Author>
+                  </Info>
+                </Starred>
+              )}
+            />
 
-        <Title style={{ textAlign: "center", marginTop: 20 }}>Movimentos</Title>
-        <FlatList
-          data={pokemon.moves}
-          keyExtractor={(item) => item}
-          renderItem={({ item }) => (
-            <Starred>
-              <Info>
-                <Title>{item.toUpperCase()}</Title>
-              </Info>
-            </Starred>
-          )}
-        />
+            <Title style={{ textAlign: "center", marginBottom: 10 }}>Movimentos</Title>
+            <FlatList
+              horizontal
+              showsHorizontalScrollIndicator={false}
+              data={pokemon.moves}
+              keyExtractor={(item) => item}
+              renderItem={({ item }) => (
+                <Starred style={{ marginRight: 10 }}>
+                  <Info>
+                    <Title>{item.toUpperCase()}</Title>
+                  </Info>
+                </Starred>
+              )}
+            />
 
-        <Title style={{ textAlign: "center", marginTop: 20 }}>Evoluções</Title>
-        <FlatList
-          horizontal
-          showsHorizontalScrollIndicator={false}
-          data={evolutionChain}
-          keyExtractor={(item) => item.name}
-          renderItem={({ item }) => (
-            <Starred>
-              <OwnerAvatar source={{ uri: item.sprite }} />
-              <Info>
-                <Title>{item.name}</Title>
-              </Info>
-            </Starred>
-          )}
-        />
+            <Title style={{ textAlign: "center", marginBottom: 10 }}>Evoluções</Title>
+            <FlatList
+              horizontal
+              showsHorizontalScrollIndicator={false}
+              data={evolutionChain}
+              keyExtractor={(item) => item.name}
+              renderItem={({ item }) => (
+                <Starred style={{ marginRight: 10 }}>
+                  <OwnerAvatar source={{ uri: item.sprite }} />
+                  <Info>
+                    <Title>{item.name}</Title>
+                  </Info>
+                </Starred>
+              )}
+            />
+          </CardPokemon>
+        </ScrollView>
       </Container>
     );
   }

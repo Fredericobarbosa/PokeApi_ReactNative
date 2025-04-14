@@ -16,15 +16,16 @@ export default function Routes() {
         name="Login"
         component={Login}
         options={{
-          title: "LOGIN",
+          title: "PokéLogin",
           headerLeft: null,
           headerTitleAlign: "center",
           headerStyle: {
-            backgroundColor: "#7159c1",
+            backgroundColor: "#F2F2F2",
           },
           headerTitleStyle: {
-            color: "#fff",
+            color: "#0075BE",
             fontWeight: "bold",
+            fontSize: 25,
           },
         }}
       />
@@ -32,14 +33,15 @@ export default function Routes() {
         name="CadastrarUsuario"
         component={CadastrarUsuario}
         options={{
-          title: "CADASTRO DE USUÁRIOS",
+          title: "PokéCadastro",
           headerTitleAlign: "center",
           headerStyle: {
-            backgroundColor: "#7159c1",
+            backgroundColor: "#F2F2F2",
           },
           headerTitleStyle: {
-            color: "#fff",
+            color: "#0075BE",
             fontWeight: "bold",
+            fontSize: 25,
           },
         }}
       />
@@ -48,20 +50,21 @@ export default function Routes() {
         component={Main}
         options={({ navigation }) => ({
           headerLeft: null,
-          title: "POKÉMON",
+          title: "POKÉMONS",
           headerTitleAlign: "center",
           headerStyle: {
-            backgroundColor: "#3498db",
+            backgroundColor: "#F2F2F2",
           },
-          headerTintColor: "#fff",
+          headerTintColor: "#0075BE",
           headerTitleStyle: {
             fontWeight: "bold",
+            fontSize: 25,
           },
           headerRight: () => (
             <Ionicons
               name="log-out-outline"
               size={24}
-              color="#fff"
+              color="#0075BE"
               style={{ marginRight: 15 }}
               onPress={async () => {
                 try {
@@ -83,11 +86,13 @@ export default function Routes() {
           title: "VER DETALHES",
           headerTitleAlign: "center",
           headerStyle: {
-            backgroundColor: "#7159c1",
+            backgroundColor: "#F2F2F2",
           },
           headerTitleStyle: {
-            color: "#fff",
+            color: "#0075BE",
             fontWeight: "bold",
+            fontSize: 25,
+            
           },
         }}
       />
