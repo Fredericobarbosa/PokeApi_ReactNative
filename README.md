@@ -40,44 +40,44 @@ npx expo start
 ```
 5. No dispositivo movel, baixe o app Expo GO na Play Store. (Observe as imagens)
 ### Instale Expo go:
-<img src="https://github.com/DimersonBR/PokeApi_ReactNative/blob/main/app/images/Expogo_playstore.jpg" alt="Play Store"  width="65%">
+<img src="https://github.com/DimersonBR/PokeApi_ReactNative/blob/main/app/images/Expogo_playstore.jpg" alt="Play Store"  width="45%">
 
 ### Abra o aplicativo entre na opção Scan QR Code
    (Permitir app tire fotos e grave videos )
-<img src="https://github.com/DimersonBR/PokeApi_ReactNative/blob/main/app/images/Leitura_do_codigo.png" alt="Scan QRCod"  width="65%">
+<img src="https://github.com/DimersonBR/PokeApi_ReactNative/blob/main/app/images/Leitura_do_codigo.png" alt="Scan QRCod"  width="45%">
 
 ## Imagens da aplicação:
 ### Tela inicial: - Login
    Após scaner o QRCod - basta acessar o app ira aparecer a tela de Login:
-<img src="https://github.com/DimersonBR/PokeApi_ReactNative/blob/main/app/images/app_login.jpg" alt="Tela Login"  width="65%">
+<img src="https://github.com/DimersonBR/PokeApi_ReactNative/blob/main/app/images/app_login.jpg" alt="Tela Login"  width="35%">
 
 Para continuar precisa realizar o cadastro do login, selecionando o botão cadastrar
 
 ### Cadastrar usuário: - Usuário
    Preencha os dados solicitado para poder ENTRAR no aplicativo.
-<img src="https://github.com/DimersonBR/PokeApi_ReactNative/blob/main/app/images/app_cadastro_login.jpg" alt="Tela Login"  width="65%">
+<img src="https://github.com/DimersonBR/PokeApi_ReactNative/blob/main/app/images/app_cadastro_login.jpg" alt="Tela Login"  width="35%">
 
 Ao clicar no Botão Cadastrar, voltará para a tela de Login, onde poderá insetir os dados e clicar em ENTRAR
 
 ### Cadastrar usuário: - Usuário
    Preencha os dados solicitado para poder ENTRAR no aplicativo.
-<img src="https://github.com/DimersonBR/PokeApi_ReactNative/blob/main/app/images/app_cadastro_login.jpg" alt="Tela Login"  width="65%">
+<img src="https://github.com/DimersonBR/PokeApi_ReactNative/blob/main/app/images/app_cadastro_login.jpg" alt="Tela Login"  width="35%">
 
 ### Acesso a Busca e Pesquisa: - Pesquisa Pokémon
    Entre com o nome de um dos personagens de Pokémon, ou inseria um número para realizar a pesquisa.
-<img src="https://github.com/DimersonBR/PokeApi_ReactNative/blob/main/app/images/app_pesquisa.jpg" alt="Tela Login"  width="65%">
+<img src="https://github.com/DimersonBR/PokeApi_ReactNative/blob/main/app/images/app_pesquisa.jpg" alt="Tela Login"  width="35%">
 
 ### Consumo da API: - Resultado da Pesquisa (Cards)
    Com base na descrição ou numero informado, o aplicativo fará uma busca nos personagens e apresentara o resultado na tela, conforme a imagem abaixo:
-<img src="https://github.com/DimersonBR/PokeApi_ReactNative/blob/main/app/images/app_resultado.jpg" alt="Tela Login"  width="65%">
+<img src="https://github.com/DimersonBR/PokeApi_ReactNative/blob/main/app/images/app_resultado.jpg" alt="Tela Login"  width="35%">
 
 ### Resultado da Pesquisa em Lista (Cards)
    Conforme for realizando as pesquisas os resultados irão aparecer em forma de lista, você poderá remover da lista clicando no Botão Remover ou Ver detalhes, confomre a imagem abaixo:
-<img src="https://github.com/DimersonBR/PokeApi_ReactNative/blob/main/app/images/app_lista.jpg" alt="Tela Login"  width="65%">
+<img src="https://github.com/DimersonBR/PokeApi_ReactNative/blob/main/app/images/app_lista.jpg" alt="Tela Login"  width="35%">
 
 ### Resultado Detalhado (Cards)
    Ao clicar no Botão Ver detalhes, será disponibilizado na tela, mais informações sobre o Pokémon pesquisado. Segue exemplo na imagem:
-<img src="https://github.com/DimersonBR/PokeApi_ReactNative/blob/main/app/images/app_Resultado_detalhado.jpg" alt="Tela Login"  width="65%">
+<img src="https://github.com/DimersonBR/PokeApi_ReactNative/blob/main/app/images/app_Resultado_detalhado.jpg" alt="Tela Login"  width="35%">
 
 Essas são as principais caracteristicas da API PokéAPI, consumindo e exibindo as informações solicitas nos cards. Seguindo projeto apresentado em sala de aula.
 
