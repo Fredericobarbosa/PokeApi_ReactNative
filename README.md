@@ -4,14 +4,15 @@
 * **[Frederico Pessoa Barbosa](https://www.linkedin.com/in/frederico-pessoa-barbosa-a2720618b/)**
 
 * *Trabalho de Programacao para Dispositivos Moveis I-A890-N-D.S.M.-109-20251 do 4o.Semestre FATEC FRANCA*
-* Se Gostar nos convide para uma Breja 🍺 ;D ;
 
 # ⚡ PokeApi_ReactNative
 
 Projeto criado com **React Native** utilizando **Expo** para consultar informações de APIs gratuitas.
 Selecionamos PokéAPI uma API pública que fornece dados sobre o universo Pokémon, incluindo informações sobre pokémons, tipos, habilidades, movimentos, evoluções e imagens. 
+
+### [PokéAPI] - Detalhes da Documentação
 ```bash
-[PokéAPI] (https://pokeapi.co/api/v2/) - Detalhes da Documentação
+https://pokeapi.co/api/v2/
 ```
 Deixaremos as instruções abaixo para a implementação e executação, assim poderá explorar conceitos de desenvolvimento mobile com essa API divertida e prática!
 
@@ -37,50 +38,64 @@ npm install
 ```bash
 npx expo start
 ```
-5. No dispositivo movel, baixe o app Expo GO na Play Store.
-- Observe a imagem:
-### Instalar Expo go:
-![Expo GO](<img src="https://github.com/DimersonBR/PokeApi_ReactNative/blob/main/app/images/Expogo_playstore.jpg" alt="Play Store"  width="95%">)
+5. No dispositivo movel, baixe o app Expo GO na Play Store. (Observe as imagens)
+### Instale Expo go:
+<img src="https://github.com/DimersonBR/PokeApi_ReactNative/blob/main/app/images/Expogo_playstore.jpg" alt="Play Store"  width="65%">
 
-- Abra o aplicativo e vá na opção Scan QR Code
+### Abra o aplicativo entre na opção Scan QR Code
    (Permitir app tire fotos e grave videos )
-![Expo GO](<img src="https://github.com/DimersonBR/PokeApi_ReactNative/blob/main/app/images/Leitura%20do%20codigo.png" alt="Scan QRCod"  width="95%">)
-
+<img src="https://github.com/DimersonBR/PokeApi_ReactNative/blob/main/app/images/Leitura_do_codigo.png" alt="Scan QRCod"  width="65%">
 
 ## Imagens da aplicação:
-### Tela inicial:
+### Tela inicial: - Login
+   Após scaner o QRCod - basta acessar o app ira aparecer a tela de Login:
+<img src="https://github.com/DimersonBR/PokeApi_ReactNative/blob/main/app/images/app_login.jpg" alt="Tela Login"  width="65%">
 
+Para continuar precisa realizar o cadastro do login, selecionando o botão cadastrar
 
+### Cadastrar usuário: - Usuário
+   Preencha os dados solicitado para poder ENTRAR no aplicativo.
+<img src="https://github.com/DimersonBR/PokeApi_ReactNative/blob/main/app/images/app_cadastro_login.jpg" alt="Tela Login"  width="65%">
 
+Ao clicar no Botão Cadastrar, voltará para a tela de Login, onde poderá insetir os dados e clicar em ENTRAR
 
-Você verá no terminal opções para abrir o aplicativo em:
+### Cadastrar usuário: - Usuário
+   Preencha os dados solicitado para poder ENTRAR no aplicativo.
+<img src="https://github.com/DimersonBR/PokeApi_ReactNative/blob/main/app/images/app_cadastro_login.jpg" alt="Tela Login"  width="65%">
 
-- 📱 [Emulador Android](https://docs.expo.dev/workflow/android-studio-emulator/)
-- 🍏 [Simulador iOS](https://docs.expo.dev/workflow/ios-simulator/)
-- 🌐 Navegador com [Expo Go](https://expo.dev/go)
-- 🧪 [Build de desenvolvimento](https://docs.expo.dev/develop/development-builds/introduction/)
+### Acesso a Busca e Pesquisa: - Pesquisa Pokémon
+   Entre com o nome de um dos personagens de Pokémon, ou inseria um número para realizar a pesquisa.
+<img src="https://github.com/DimersonBR/PokeApi_ReactNative/blob/main/app/images/app_pesquisa.jpg" alt="Tela Login"  width="65%">
 
----
+### Consumo da API: - Resultado da Pesquisa (Cards)
+   Com base na descrição ou numero informado, o aplicativo fará uma busca nos personagens e apresentara o resultado na tela, conforme a imagem abaixo:
+<img src="https://github.com/DimersonBR/PokeApi_ReactNative/blob/main/app/images/app_resultado.jpg" alt="Tela Login"  width="65%">
+
+### Resultado da Pesquisa em Lista (Cards)
+   Conforme for realizando as pesquisas os resultados irão aparecer em forma de lista, você poderá remover da lista clicando no Botão Remover ou Ver detalhes, confomre a imagem abaixo:
+<img src="https://github.com/DimersonBR/PokeApi_ReactNative/blob/main/app/images/app_lista.jpg" alt="Tela Login"  width="65%">
+
+### Resultado Detalhado (Cards)
+   Ao clicar no Botão Ver detalhes, será disponibilizado na tela, mais informações sobre o Pokémon pesquisado. Segue exemplo na imagem:
+<img src="https://github.com/DimersonBR/PokeApi_ReactNative/blob/main/app/images/app_Resultado_detalhado.jpg" alt="Tela Login"  width="65%">
+
+Essas são as principais caracteristicas da API PokéAPI, consumindo e exibindo as informações solicitas nos cards. Seguindo projeto apresentado em sala de aula.
+
+## ♻️ Reiniciar o Projeto
+Se desejar começar com um projeto limpo, execute:
+```bash
+npm run reset-project
+```
+Este comando moverá o código de exemplo para a pasta `app-example` e criará uma pasta `app` em branco para que você possa iniciar do zero.
 
 ## 🛠️ Estrutura do Projeto
 
 Este projeto utiliza **roteamento baseado em arquivos**, facilitando a organização dos componentes dentro da pasta `app`.
 Você pode começar a desenvolver diretamente editando os arquivos da pasta:
-
 ```
 /app
 ```
-## ♻️ Reiniciar o Projeto
-
-Se desejar começar com um projeto limpo, execute:
-
-```bash
-npm run reset-project
-```
-
-Este comando moverá o código de exemplo para a pasta `app-example` e criará uma pasta `app` em branco para que você possa iniciar do zero.
-
-## 📚 Saiba mais - Links utilizados para referência.
+## 📚 Saiba mais - referências utilizadas
 
 Aprofunde-se no desenvolvimento com Expo e React Native utilizando os links abaixo:
 
@@ -88,5 +103,4 @@ Aprofunde-se no desenvolvimento com Expo e React Native utilizando os links abai
 - 🧭 [Guias e tutoriais](https://docs.expo.dev/guides)
 - 🎓 [Tutorial passo a passo](https://docs.expo.dev/tutorial/introduction/)
 
-
-
+* Se Gostou nos convide para uma Breja 🍺! 
