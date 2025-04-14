@@ -49,7 +49,6 @@ export const User = styled.View`
   margin-bottom: 20px;
   align-items: center;
   border-color: #FFCC00;
-  elevation: 4;
 `;
 
 export const Avatar = styled.Image`
