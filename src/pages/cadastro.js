@@ -129,9 +129,6 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.2,
     shadowRadius: 3,
   },
-  secondaryButton: {
-    backgroundColor: "#FFCC00", // Amarelo Pikachu para botão de cadastro
-  },
   buttonText: {
     color: "#FFF",
     fontWeight: "bold",
